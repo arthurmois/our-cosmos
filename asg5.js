@@ -35,19 +35,19 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new THREE.CubeTextureLoader();
 const texture = loader.load([
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_right1.png',
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_left2.png',
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_top3.png',
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_bottom4.png',
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_front5.png',
-    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_back6.png'
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_right1.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_left2.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_top3.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_bottom4.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_front5.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/skybox/purple-skybox_back6.png'
 ]);
 scene.background = texture;
 
 
 // //add sun
 var sun_geo = new THREE.SphereGeometry(696340*scale,100,100);
-const sun_texture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/sunmap.jpg' );
+const sun_texture = new THREE.TextureLoader().load( 'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/sunmap.jpg' );
 var sun_material = new THREE.MeshBasicMaterial( { map: sun_texture } );
 var sun = new THREE.Mesh( sun_geo, sun_material );
 scene.add( sun );
