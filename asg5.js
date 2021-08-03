@@ -1,27 +1,15 @@
 const scale = (Math.pow(10,-4.2));
 
-//const sun =     new Planet(696340,  new THREE.Vector3( 0, 0, 0)       , (0*Math.pow(10,6)),      {color: 0xF78E00},
-//                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/sunmap.jpg');
-const mercury = new Planet(2439,    new THREE.Vector3( -1,   0, -2)   , (57.9*Math.pow(10,6)),   {color: 0xF78E00},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/mercurymap.jpg');
-const venus =   new Planet(6052,    new THREE.Vector3( -1.5, 0,  3)   , (108.2*Math.pow(10,6)),  {color: 0xE29D00},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/venusmap.jpg');
-const earth =   new Planet(6378,    new THREE.Vector3( -1,   0, -4)   , (149.6*Math.pow(10,6)),  {color: 0x0076FF},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/earthmap1k.jpg');
-const mars =    new Planet(3396,    new THREE.Vector3( -4,   0,  4)   , (227.9*Math.pow(10,6)),  {color: 0xFF1925},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/marsmap1k.jpg');
-const jupiter = new Planet(71492,   new THREE.Vector3( 5.5,  0, -4.5) , (778.6*Math.pow(10,6)),  {color: 0xA000FF},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/jupitermap.jpg');
-const saturn =  new Planet(60268,   new THREE.Vector3( 5,    0, -6.5) , (1433.5*Math.pow(10,6)), {color: 0x957500},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/saturnmap.jpg');
-const uranus =  new Planet(25559,   new THREE.Vector3( 7,    0,  6.5) , (2872.5*Math.pow(10,6)), {color: 0x8247FF},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/uranusmap.jpg');
-const neptune = new Planet(24764,   new THREE.Vector3( 10.5, 0, -1.5) , (4495.1*Math.pow(10,6)), {color: 0x826FFF},
-                                                                                                                  'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/neptunemap.jpg');
-const pluto =   new Planet(1815,    new THREE.Vector3( 5,    0, -10)  , (5906.4*Math.pow(10,6)), {color: 0xAAAAAA},
-                                                                                                                'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/plutomap1k.jpg');
-const moon =   new Planet(1815,    new THREE.Vector3( -3,    0, 50)  , (150000), {color: 0xAAAAAA},
-                                                                                                                'https://raw.githubusercontent.com/jeromeetienne/threex.planets/master/images/plutomap1k.jpg');                                                                                                             
+const mercury = new Planet(2439,    new THREE.Vector3( -1,   0, -2)   , (57.9*Math.pow(10,6)),   {color: 0xF78E00},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/mercurymap.jpg');
+const venus =   new Planet(6052,    new THREE.Vector3( -1.5, 0,  3)   , (108.2*Math.pow(10,6)),  {color: 0xE29D00},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/venusmap.jpg');
+const earth =   new Planet(6378,    new THREE.Vector3( -1,   0, -4)   , (149.6*Math.pow(10,6)),  {color: 0x0076FF},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/earthmap1k.jpg');
+const mars =    new Planet(3396,    new THREE.Vector3( -4,   0,  4)   , (227.9*Math.pow(10,6)),  {color: 0xFF1925},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/marsmap1k.jpg');
+const jupiter = new Planet(71492,   new THREE.Vector3( 5.5,  0, -4.5) , (778.6*Math.pow(10,6)),  {color: 0xA000FF},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/jupitermap.jpg');
+const saturn =  new Planet(60268,   new THREE.Vector3( 5,    0, -6.5) , (1433.5*Math.pow(10,6)), {color: 0x957500},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/saturnmap.jpg');
+const uranus =  new Planet(25559,   new THREE.Vector3( 7,    0,  6.5) , (2872.5*Math.pow(10,6)), {color: 0x8247FF},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/uranusmap.jpg');
+const neptune = new Planet(24764,   new THREE.Vector3( 10.5, 0, -1.5) , (4495.1*Math.pow(10,6)), {color: 0x826FFF},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/neptunemap.jpg');
+const pluto =   new Planet(1815,    new THREE.Vector3( 5,    0, -10)  , (5906.4*Math.pow(10,6)), {color: 0xAAAAAA},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/plutomap1k.jpg');
+const moon =   new Planet(1815,    new THREE.Vector3( -3,    0, 50)  , (150000), {color: 0xAAAAAA},'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/images/planet_textures/plutomap1k.jpg');                                                                                                             
 
 
 //create scene
