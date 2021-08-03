@@ -56,7 +56,7 @@ sun.add( neptune.planet );
 sun.add( pluto.planet );
 
 
-//add orbit paths
+// //add orbit paths
 // drawCircle( mercury.dist );
 // drawCircle( venus.dist );
 // drawCircle( earth.dist );
@@ -68,17 +68,7 @@ sun.add( pluto.planet );
 // drawCircle( pluto.dist +0.69 );
 
 const controls = new OrbitControls( camera, renderer.domElement );
-
-//controls.update() must be called after any manual changes to the camera's transform
-
-// camera.position.x = earth.position.x-0.4;
-// camera.position.y = earth.position.y+0.4;
-// camera.position.z = earth.position.z-5;
-
 viewPlanet(earth,3,0.5);
-
-
-//camera.lookAt(earth.position.x,earth.position.y,earth.position.z);
 
 function viewPlanet(planet, offset, ht)
 {
@@ -96,12 +86,6 @@ function viewPlanet(planet, offset, ht)
 }
 
 function animate() {
-    // rod.rotation.x += 0.01;
-    // rod.rotation.y += 0.01;  
-    //rod.rotateY(-0.02);
-    //wheel.rotateY(-0.02);
-    // camera.rotateY(-0.02);
-    // camera.lookAt(earth.position.x,earth.position.y,earth.position.z);
 
     controls.update();
 
