@@ -35,12 +35,12 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new THREE.CubeTextureLoader();
 const texture = loader.load([
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_right1.png',
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_left2.png',
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_top3.png',
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_bottom4.png',
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_front5.png',
-    'https://raw.githubusercontent.com/arthurmois/skybox-stars/main/purple-skybox_back6.png'
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_right1.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_left2.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_top3.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_bottom4.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_front5.png',
+    'https://raw.githubusercontent.com/arthurmois/our-cosmos/master/skybox/purple-skybox_back6.png'
 ]);
 scene.background = texture;
 
@@ -56,8 +56,10 @@ scene.add( sun );
 //add planets
 sun.add( mercury.planet );
 sun.add( venus.planet );
+
 sun.add( earth.planet );
 earth.planet.add(moon.planet);
+
 sun.add( mars.planet );
 sun.add( jupiter.planet );
 sun.add( saturn.planet );
