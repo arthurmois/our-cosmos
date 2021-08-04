@@ -74,7 +74,6 @@ function viewPlanet(planet, offset, ht)
 {
     var camera_dir = planet.dir.clone();
     camera_dir.normalize();
-    console.log(planet.dir.x,planet.dir.y,planet.dir.z);
     camera.position.set(planet.position.x+(10*camera_dir.x*offset),planet.position.y+(10*camera_dir.y)+ht,planet.position.z+(10*camera_dir.z*offset));
     //camera.position.set(planet.position.x+10,planet.position.y+10,planet.position.z+10);
 
